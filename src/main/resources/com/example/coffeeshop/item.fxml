@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#click" onMousePressed="#click" prefHeight="172.0" prefWidth="180.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coffeeshop.Controller.ItemController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="180.0" styleClass="item" stylesheets="@style.css">
+         <children>
+            <HBox alignment="CENTER" prefHeight="42.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="itemNameLabel" alignment="CENTER" prefHeight="42.0" prefWidth="168.0" text="Egg and Cheese Sandwich" textAlignment="CENTER">
+                     <font>
+                        <Font name="Calibri" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="itemPriceLabel" text="\$6.00">
+                     <font>
+                        <Font name="Calibri Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="itemImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/egg-and-cheese-sandwich.png" />
+               </image>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

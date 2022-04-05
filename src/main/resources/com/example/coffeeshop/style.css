@@ -1,0 +1,13 @@
+.left-bar{
+    -fx-background-color: #F5F5F5;
+}
+
+.left-button{
+    -fx-background-radius: 0;
+    -fx-background-color: #CCCCC4;
+}
+
+.item{
+    -fx-background-color: #eaeae7;
+    -fx-background-radius: 0;
+}
